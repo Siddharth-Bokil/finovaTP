@@ -1,6 +1,5 @@
 # Level 0
-
-### Find password in readme
+> Find password in readme
 
 **Password:** `ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If`
 
@@ -18,8 +17,7 @@ None
 
 
 # Level 1
-
-### Read a file
+> Read a file
 
 **Password:** `263JGJPfgU6LtdEvgfWU1XP5yac29mFx`
 
@@ -37,8 +35,7 @@ None
 
 
 # Level 2
-
-### Read a file with spaces in its name
+> Read a file with spaces in its name
 
 **Password:** `MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx`
 
@@ -56,8 +53,7 @@ None
 
 
 # Level 3
-
-### Read a hidden file
+> Read a hidden file
 
 **Password:** `2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ`
 
@@ -75,8 +71,7 @@ None
 
 
 # Level 4
-
-### Find the human readable file
+> Find the human readable file
 
 **Password:** `4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw`
 
@@ -91,8 +86,7 @@ None
 
 
 # Level 5
-
-### Use find to find the correct file
+> Use find to find the correct file
 
 **Password:** `HWasnPhtq9AVKe0dmk45nxy20cvUa6EG`
 
