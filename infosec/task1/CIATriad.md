@@ -1,9 +1,15 @@
-The CIA triad is a foundational model in information security that describes the three core goals any secure system must balance: Confidentiality, Integrity, and Availability. It is not a law of nature, more like a compass. If a security decision doesn’t clearly support at least one of these, it’s probably security theater.
+## The CIA Triad
 
-Confidentiality is about keeping information away from people who aren’t supposed to see it. This doesn’t mean hiding everything from everyone; it means controlled access. Techniques like authentication, authorization, encryption, and network segmentation exist to enforce confidentiality. A leaked database, an exposed API key, or an unsecured S3 bucket are all failures of confidentiality. The data still exists and may even be correct, but it’s in the wrong hands.
+The **CIA triad** is a foundational model in information security that defines the three core objectives of secure system design: **Confidentiality, Integrity, and Availability**. It acts as a guiding framework for evaluating security controls and decisions. If a security measure does not clearly support at least one of these principles, its value should be questioned.
 
-Integrity ensures that data remains accurate, complete, and unaltered unless changed by authorized actions. If someone tampers with exam results, financial records, or source code without permission, integrity is broken—even if nobody notices immediately. Hashing, digital signatures, checksums, access controls, and audit logs are common tools used to protect integrity. A system with high integrity makes it possible to trust the data it produces.
+### Confidentiality
+Confidentiality ensures that information is accessible only to authorized individuals or systems. The goal is controlled access, not secrecy for its own sake. Common mechanisms include authentication, authorization, encryption, and network segmentation. Breaches of confidentiality occur when sensitive data is exposed to unauthorized parties, such as through leaked credentials, exposed databases, or misconfigured cloud storage.
 
-Availability means that systems and data are accessible when legitimate users need them. A perfectly confidential and uncorrupted system is useless if it’s down when required. Hardware failures, power outages, denial-of-service attacks, and poor capacity planning all threaten availability. Redundancy, backups, load balancing, failover mechanisms, and disaster recovery plans are designed to keep services running.
+### Integrity
+Integrity focuses on maintaining the accuracy, consistency, and trustworthiness of data throughout its lifecycle. Data should only be modified in authorized and traceable ways. Unauthorized changes to records, source code, or configurations represent integrity failures, even if the system remains operational. Techniques such as hashing, digital signatures, checksums, access controls, and audit logs help preserve data integrity.
 
-The real challenge is balance. Increasing security in one area can weaken another—for example, extreme confidentiality controls can reduce availability. Good security design is about managing these trade-offs intelligently, not maximizing one pillar at the expense of the others.
+### Availability
+Availability ensures that systems, services, and data are accessible to authorized users when needed. A system that is secure but frequently unavailable fails its purpose. Threats to availability include hardware failures, denial-of-service attacks, software bugs, and natural disasters. Redundancy, backups, load balancing, failover strategies, and disaster recovery planning are key to maintaining availability.
+
+### Balancing the Triad
+The CIA triad is about balance, not maximizing a single objective. Strengthening one aspect can sometimes weaken another—for example, strict access controls may reduce usability or availability. Effective security design carefully manages these trade-offs to meet the system’s real-world requirements.
