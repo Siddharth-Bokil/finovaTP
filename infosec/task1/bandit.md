@@ -24,10 +24,10 @@ None
 **Password:** `263JGJPfgU6LtdEvgfWU1XP5yac29mFx`
 
 ## Process
-Ran `cat /home/bandit1/-` to get the password since `cat -` did not work.
+Ran `cat /home/bandit1/-` to get the password.
 
 ## What I learnt
--
+Files are read through the cat command.
 
 ## References used
 None
@@ -65,7 +65,7 @@ None
 Ran `cd inhere` and then `ls -al`. Then running `cat ./...Hiding-From-You` gave me the flag.
 
 ## What I learnt
--
+Hidden files are accessed throught `ls -a`.
 
 ## References
 None
