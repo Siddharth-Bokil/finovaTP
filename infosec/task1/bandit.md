@@ -4,9 +4,7 @@
 **Password:** `ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If`
 
 ## Process
-I connected to the server using  
-`ssh bandit0@bandit.labs.overthewire.org -p 2220`.  
-Once logged in, I listed the files in the home directory and noticed a file named `readme`. I used `cat readme` to display its contents, which contained the password for the next level. After noting it down, I exited the session using `exit`.
+I connected to the server using `ssh bandit0@bandit.labs.overthewire.org -p 2220`. Once logged in, I listed the files in the home directory and noticed a file named `readme`. I used `cat readme` to display its contents, which contained the password for the next level. After noting it down, I exited the session using `exit`.
 
 ## What I learnt
 Exit to connect to next level
@@ -24,9 +22,7 @@ None
 **Password:** `263JGJPfgU6LtdEvgfWU1XP5yac29mFx`
 
 ## Process
-After logging in as `bandit1`, I checked the home directory and found a file named `-`. Since filenames starting with `-` can be interpreted as command options, I provided the full path to the file. Running  
-`cat /home/bandit1/-`  
-correctly displayed the contents of the file, revealing the password.
+After logging in as `bandit1`, I checked the home directory and found a file named `-`. Since filenames starting with `-` can be interpreted as command options, I provided the full path to the file. Running `cat /home/bandit1/-` correctly displayed the contents of the file, revealing the password.
 
 ## What I learnt
 Files are read through the cat command.
@@ -44,9 +40,7 @@ None
 **Password:** `MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx`
 
 ## Process
-Once logged in, I listed the files and found one with spaces in its name. Since spaces break command arguments, I escaped each space using a backslash. Running  
-`cat /home/bandit2/--spaces\ in\ this\ filename--`  
-allowed me to correctly reference the file and read the password.
+Once logged in, I listed the files and found one with spaces in its name. Since spaces break command arguments, I escaped each space using a backslash. Running `cat /home/bandit2/--spaces\ in\ this\ filename--` allowed me to correctly reference the file and read the password.
 
 ## What I learnt
 Prepend `\` before spaces to call a file having spaces.
@@ -64,9 +58,7 @@ None
 **Password:** `2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ`
 
 ## Process
-After logging in, I navigated into the `inhere` directory using `cd inhere`. A normal `ls` command didn’t show any useful files, so I used `ls -al` to list all files, including hidden ones. This revealed a hidden file named `...Hiding-From-You`. Running  
-`cat ./...Hiding-From-You`  
-displayed the password.
+After logging in, I navigated into the `inhere` directory using `cd inhere`. A normal `ls` command didn’t show any useful files, so I used `ls -al` to list all files, including hidden ones. This revealed a hidden file named `...Hiding-From-You`. Running `cat ./...Hiding-From-You` displayed the password.
 
 ## What I learnt
 Hidden files are accessed throught `ls -a`.
@@ -99,9 +91,7 @@ None
 **Password:** `HWasnPhtq9AVKe0dmk45nxy20cvUa6EG`
 
 ## Process
-First, I navigated into the `inhere/` directory using `cd inhere/`. Inside, there were many subdirectories, each containing multiple files, so manually checking files was not practical. Based on the level hint, I knew the target file had a specific size and was not executable. To narrow it down efficiently, I used the `find` command with filters:  
-`find . -size 1033c ! -executable`  
-This searched through all subdirectories for files exactly 1033 bytes in size and excluded any executable files. The command returned a single matching file. I then used `cat` on that file to read the password.
+First, I navigated into the `inhere/` directory using `cd inhere/`. Inside, there were many subdirectories, each containing multiple files, so manually checking files was not practical. Based on the level hint, I knew the target file had a specific size and was not executable. To narrow it down efficiently, I used the `find` command with filters as `find . -size 1033c ! -executable`. This searched through all subdirectories for files exactly 1033 bytes in size and excluded any executable files. The command returned a single matching file. I then used `cat` on that file to read the password.
 
 ## What I learnt
 Find can search for a specfic file size and executability. `c` stands for characters.
