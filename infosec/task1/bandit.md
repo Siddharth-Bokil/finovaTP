@@ -1,7 +1,6 @@
 # Level 0
 > Find password in readme
-
-**Password:** 
+ 
 ## Process
 I connected to the server using `ssh bandit0@bandit.labs.overthewire.org -p 2220`. Once logged in, I listed the files in the home directory and noticed a file named `readme`. I used `cat readme` to display its contents, which contained the password for the next level. After noting it down, I exited the session using `exit`.
 
