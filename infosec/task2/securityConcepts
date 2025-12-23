@@ -1,0 +1,12 @@
+## Encryption vs Encoding
+
+Encoding is concerned with **data representation**, not security. Its purpose is to convert data into a format that can be reliably stored by different systems. Encoding assumes a cooperative environment in which no adversary is attempting to read or manipulate the data. When data is encoded, it is transformed using a publicly known scheme. No secret is involved in this process, and anyone who understands the encoding format can reverse it. This reversibility is not a flaw but a design requirement, as encoding exists to ensure compatibility rather than confidentiality. Formats such as Base64, hexadecimal, ASCII, UTF8, and URL encoding are used extensively in real systems.
+
+Encryption is concerned with **confidentiality**. It exists to protect data from unauthorized access, even in hostile environments where interception or theft is expected. Encrypted data is transformed using a **secret key**, and without possession of that key, reversing the transformation should be computationally infeasible. Modern encryption algorithms are public and heavily studied, and their security does not depend on hiding how they work. Instead, all secrecy is concentrated in the key itself. Encrypted data remains meaningless to anyone who does not possess the correct key.
+
+
+## Principle of Least Privilege
+
+The **Principle of Least Privilege** states that every user, process, or system component should be granted only the minimum permissions required to perform its intended function. When a system component is compromised, an attacker inherits the permissions of that component. Least privilege limits what the attacker can do next. By restricting access in advance, the system reduces the scope of potential damage and prevents a single failure from becoming into a complete compromise. Least privilege does not prevent breaches from occurring. Its role is to ensure that breaches are contained, manageable, and recoverable.
+
+In operating systems, least privilege appears as the separation between normal users and administrators, controlled privilege escalation, and file permissions. In application development, it is reflected in services running without administrative rights, database accounts restricted to specific operations, and API keys scoped to precise functionality. In cloud and distributed systems, least privilege is enforced through narrowly defined roles, temporary credentials, and explicit service-to-service permissions.
