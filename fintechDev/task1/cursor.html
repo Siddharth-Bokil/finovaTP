@@ -1,0 +1,37 @@
+<!DOCTYPE html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finova Data Viewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell" aria-label="Finova data viewer">
+    <h1>Finova Data Viewer</h1>
+    <p class="lede">Enter a stock ticker or cryptocurrency name to preview market data. Search is inactive for now; placeholders illustrate the upcoming data layout.</p>
+
+    <div class="search">
+      <div class="field">
+        <label for="asset-input">Stock symbol or cryptocurrency</label>
+        <input id="asset-input" name="asset-input" type="text" placeholder="e.g., AAPL or Bitcoin" aria-label="Stock symbol or cryptocurrency">
+      </div>
+      <button type="button" aria-label="Search">Search</button>
+    </div>
+
+    <div class="panels">
+      <section class="panel" aria-labelledby="stock-title">
+        <div class="pill">Stocks</div>
+        <h2 id="stock-title">Stock Information</h2>
+        <p class="placeholder">Results for stock tickers will appear here. Add price, volume, and performance details once APIs are connected.</p>
+      </section>
+
+      <section class="panel" aria-labelledby="crypto-title">
+        <div class="pill">Crypto</div>
+        <h2 id="crypto-title">Crypto Information</h2>
+        <p class="placeholder">Results for cryptocurrencies will appear here. Include current price, market cap, and trend data in the next task.</p>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
+
