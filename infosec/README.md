@@ -1,4 +1,4 @@
-## Security concepts covered so far
+## Security Concepts Covered
 - CIA Triad
 - Encryption vs Encoding
 - Principle of Least Privilege  
