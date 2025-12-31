@@ -13,7 +13,7 @@ Ran `find / -size 33c -user bandit7 -group bandit6` and then `cat /var/lib/dpkg/
   - `-group` owned by a specific group
 
 ## References
--
+None
 
 
 <br><br><br><br>
@@ -31,7 +31,7 @@ Ran `grep millionth data.txt` to get the password.
 `grep` prints out the entire line the given word is in.
 
 ## References
--
+None
 
 
 <br><br><br><br>
@@ -51,7 +51,7 @@ Ran `sort data.txt | uniq -u` to get the password.
 - `uniq` prints each line once no matter how many times it may have occured.
 
 ## References
--
+None
 
 
 <br><br><br><br>
@@ -69,7 +69,7 @@ Ran `strings data.txt | grep ==` to find the password.
 `strings fileName` returns all human-readable lines from binary data.
 
 ## References
--
+None
 
 
 <br><br><br><br>
